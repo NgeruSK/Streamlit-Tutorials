@@ -1,4 +1,6 @@
 import streamlit as st
+from transformers import pipeline
+
 # Streamlit app UI
 st.title("GenAI Text Generator Based on Preceding Input")
 
