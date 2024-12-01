@@ -1,3 +1,4 @@
+import streamlit as st
 # Streamlit app UI
 st.title("GenAI Text Generator Based on Preceding Input")
 
