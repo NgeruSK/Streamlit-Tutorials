@@ -2,11 +2,14 @@ import streamlit as st
 from transformers import pipeline
 
 # Initialize your generator
-generator = pipeline("text-generation", model="gpt2")
+generator = pipeline("text-generation", model="Salesforce/codegen-350M-mono", framework="pt")
 
+st.title("GenAI Code Completion")
+prompt = st.text_input("What is your first code snip like?")
 
-st.title("GenAI Intro Preview")
-fav_meal = st.text_input("What is your favourite meal?")
+if(st.button("Generate")):
+    # Complete code snippet
+    completed_code = generator(prompt, max_length=250, num_return_sequences=1)
 
-st.text(f"Input favourite meal is: {fav_meal}")
+    st.text(completed_code[0]['generated_text'])
 

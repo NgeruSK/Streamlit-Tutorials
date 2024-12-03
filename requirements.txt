@@ -3,3 +3,4 @@ transformers
 PyMuPDF
 tensorflow
 tf-keras
+fitz
