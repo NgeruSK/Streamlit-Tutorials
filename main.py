@@ -2,7 +2,7 @@ import streamlit as st
 from transformers import pipeline
 
 # Initialize your generator
-generator = pipeline("text-generation", model="Salesforce/codegen-350M-mono", framework="pt")
+generator = pipeline("text-generation", model="Salesforce/codegen-350M-mono")
 # generator = pipeline("text-generation")
 
 
