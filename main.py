@@ -3,6 +3,8 @@ from transformers import pipeline
 
 # Initialize your generator
 generator = pipeline("text-generation", model="Salesforce/codegen-350M-mono", framework="pt")
+# generator = pipeline("text-generation")
+
 
 st.title("GenAI Code Completion")
 prompt = st.text_input("What is your first code snip like?")

@@ -4,3 +4,4 @@ PyMuPDF
 tensorflow
 tf-keras
 fitz
+pytorch
